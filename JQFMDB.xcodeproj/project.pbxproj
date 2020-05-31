@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F29788CDF9F91B5D4B24BE5 /* libPods-JQFMDB-JQFMDBUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C021362B8BD68039ACC004 /* libPods-JQFMDB-JQFMDBUITests.a */; };
+		C48B7ABAAB8885E9C4ABFEA6 /* libPods-JQFMDBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034955E378F99BF0F0A53F49 /* libPods-JQFMDBTests.a */; };
+		CBF558672482846500BB696B /* JQFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF558662482846500BB696B /* JQFMDB.m */; };
+		E29FB9A6FDD3095A93FB1CEF /* libPods-JQFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019EDD62FAF6524F03AB4632 /* libPods-JQFMDB.a */; };
 		F34BAF9B1E71657C00DDF1C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAF9A1E71657C00DDF1C2 /* main.m */; };
 		F34BAF9E1E71657C00DDF1C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAF9D1E71657C00DDF1C2 /* AppDelegate.m */; };
 		F34BAFA11E71657C00DDF1C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFA01E71657C00DDF1C2 /* ViewController.m */; };
@@ -16,12 +20,6 @@
 		F34BAFAC1E71657C00DDF1C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34BAFAA1E71657C00DDF1C2 /* LaunchScreen.storyboard */; };
 		F34BAFB71E71657C00DDF1C2 /* JQFMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFB61E71657C00DDF1C2 /* JQFMDBTests.m */; };
 		F34BAFC21E71657C00DDF1C2 /* JQFMDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFC11E71657C00DDF1C2 /* JQFMDBUITests.m */; };
-		F34BAFDB1E7165F500DDF1C2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFD11E7165F500DDF1C2 /* FMDatabase.m */; };
-		F34BAFDC1E7165F500DDF1C2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFD31E7165F500DDF1C2 /* FMDatabaseAdditions.m */; };
-		F34BAFDD1E7165F500DDF1C2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFD51E7165F500DDF1C2 /* FMDatabasePool.m */; };
-		F34BAFDE1E7165F500DDF1C2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFD71E7165F500DDF1C2 /* FMDatabaseQueue.m */; };
-		F34BAFDF1E7165F500DDF1C2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFDA1E7165F500DDF1C2 /* FMResultSet.m */; };
-		F34BAFE31E71661A00DDF1C2 /* JQFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFE21E71661A00DDF1C2 /* JQFMDB.m */; };
 		F34BAFE61E71669900DDF1C2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F34BAFE51E71669900DDF1C2 /* Person.m */; };
 		F34BAFE81E71673C00DDF1C2 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F34BAFE71E71673C00DDF1C2 /* bg.jpg */; };
 		F34BAFEB1E71683A00DDF1C2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F34BAFEA1E71683A00DDF1C2 /* libsqlite3.0.tbd */; };
@@ -47,6 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019EDD62FAF6524F03AB4632 /* libPods-JQFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JQFMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C021362B8BD68039ACC004 /* libPods-JQFMDB-JQFMDBUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JQFMDB-JQFMDBUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		034955E378F99BF0F0A53F49 /* libPods-JQFMDBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JQFMDBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B5A21F07211F9708B67C01 /* Pods-JQFMDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDBTests.debug.xcconfig"; path = "Target Support Files/Pods-JQFMDBTests/Pods-JQFMDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94428A935381213F3A23A3A2 /* Pods-JQFMDB-JQFMDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB-JQFMDBUITests.debug.xcconfig"; path = "Target Support Files/Pods-JQFMDB-JQFMDBUITests/Pods-JQFMDB-JQFMDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8307A9771A7D30BDD14279 /* Pods-JQFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB.debug.xcconfig"; path = "Target Support Files/Pods-JQFMDB/Pods-JQFMDB.debug.xcconfig"; sourceTree = "<group>"; };
+		BBBD25CE4FAE4DBC56827993 /* Pods-JQFMDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDBTests.release.xcconfig"; path = "Target Support Files/Pods-JQFMDBTests/Pods-JQFMDBTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBF558632482834E00BB696B /* JQFMDB.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JQFMDB.podspec; sourceTree = "<group>"; };
+		CBF558652482846500BB696B /* JQFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQFMDB.h; sourceTree = "<group>"; };
+		CBF558662482846500BB696B /* JQFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQFMDB.m; sourceTree = "<group>"; };
+		CBF55868248287F000BB696B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E6E3D8B21A009AE69FDEFAFA /* Pods-JQFMDB-JQFMDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB-JQFMDBUITests.release.xcconfig"; path = "Target Support Files/Pods-JQFMDB-JQFMDBUITests/Pods-JQFMDB-JQFMDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7DB88CC215705194AB2D742 /* Pods-JQFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB.release.xcconfig"; path = "Target Support Files/Pods-JQFMDB/Pods-JQFMDB.release.xcconfig"; sourceTree = "<group>"; };
 		F34BAF961E71657C00DDF1C2 /* JQFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34BAF9A1E71657C00DDF1C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F34BAF9C1E71657C00DDF1C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,19 +75,6 @@
 		F34BAFBD1E71657C00DDF1C2 /* JQFMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQFMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34BAFC11E71657C00DDF1C2 /* JQFMDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQFMDBUITests.m; sourceTree = "<group>"; };
 		F34BAFC31E71657C00DDF1C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F34BAFD01E7165F500DDF1C2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		F34BAFD11E7165F500DDF1C2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		F34BAFD21E7165F500DDF1C2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		F34BAFD31E7165F500DDF1C2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		F34BAFD41E7165F500DDF1C2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		F34BAFD51E7165F500DDF1C2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		F34BAFD61E7165F500DDF1C2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		F34BAFD71E7165F500DDF1C2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		F34BAFD81E7165F500DDF1C2 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		F34BAFD91E7165F500DDF1C2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		F34BAFDA1E7165F500DDF1C2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		F34BAFE11E71661A00DDF1C2 /* JQFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQFMDB.h; sourceTree = "<group>"; };
-		F34BAFE21E71661A00DDF1C2 /* JQFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQFMDB.m; sourceTree = "<group>"; };
 		F34BAFE41E71669900DDF1C2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		F34BAFE51E71669900DDF1C2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		F34BAFE71E71673C00DDF1C2 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
@@ -93,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F34BAFEB1E71683A00DDF1C2 /* libsqlite3.0.tbd in Frameworks */,
+				E29FB9A6FDD3095A93FB1CEF /* libPods-JQFMDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48B7ABAAB8885E9C4ABFEA6 /* libPods-JQFMDBTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,20 +107,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F29788CDF9F91B5D4B24BE5 /* libPods-JQFMDB-JQFMDBUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CE0380495F8FF2A34C897E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA8307A9771A7D30BDD14279 /* Pods-JQFMDB.debug.xcconfig */,
+				E7DB88CC215705194AB2D742 /* Pods-JQFMDB.release.xcconfig */,
+				94428A935381213F3A23A3A2 /* Pods-JQFMDB-JQFMDBUITests.debug.xcconfig */,
+				E6E3D8B21A009AE69FDEFAFA /* Pods-JQFMDB-JQFMDBUITests.release.xcconfig */,
+				48B5A21F07211F9708B67C01 /* Pods-JQFMDBTests.debug.xcconfig */,
+				BBBD25CE4FAE4DBC56827993 /* Pods-JQFMDBTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F34BAF8D1E71657C00DDF1C2 = {
 			isa = PBXGroup;
 			children = (
+				CBF55868248287F000BB696B /* Podfile */,
+				CBF558632482834E00BB696B /* JQFMDB.podspec */,
 				F34BAF981E71657C00DDF1C2 /* JQFMDB */,
 				F34BAFB51E71657C00DDF1C2 /* JQFMDBTests */,
 				F34BAFC01E71657C00DDF1C2 /* JQFMDBUITests */,
 				F34BAF971E71657C00DDF1C2 /* Products */,
 				F34BAFE91E71683A00DDF1C2 /* Frameworks */,
+				5CE0380495F8FF2A34C897E0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +154,6 @@
 		F34BAF981E71657C00DDF1C2 /* JQFMDB */ = {
 			isa = PBXGroup;
 			children = (
-				F34BAFCF1E7165F500DDF1C2 /* fmdb */,
 				F34BAFE01E71661A00DDF1C2 /* JQFMDB */,
 				F34BAF9C1E71657C00DDF1C2 /* AppDelegate.h */,
 				F34BAF9D1E71657C00DDF1C2 /* AppDelegate.m */,
@@ -186,29 +202,11 @@
 			path = JQFMDBUITests;
 			sourceTree = "<group>";
 		};
-		F34BAFCF1E7165F500DDF1C2 /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				F34BAFD01E7165F500DDF1C2 /* FMDatabase.h */,
-				F34BAFD11E7165F500DDF1C2 /* FMDatabase.m */,
-				F34BAFD21E7165F500DDF1C2 /* FMDatabaseAdditions.h */,
-				F34BAFD31E7165F500DDF1C2 /* FMDatabaseAdditions.m */,
-				F34BAFD41E7165F500DDF1C2 /* FMDatabasePool.h */,
-				F34BAFD51E7165F500DDF1C2 /* FMDatabasePool.m */,
-				F34BAFD61E7165F500DDF1C2 /* FMDatabaseQueue.h */,
-				F34BAFD71E7165F500DDF1C2 /* FMDatabaseQueue.m */,
-				F34BAFD81E7165F500DDF1C2 /* FMDB.h */,
-				F34BAFD91E7165F500DDF1C2 /* FMResultSet.h */,
-				F34BAFDA1E7165F500DDF1C2 /* FMResultSet.m */,
-			);
-			path = fmdb;
-			sourceTree = "<group>";
-		};
 		F34BAFE01E71661A00DDF1C2 /* JQFMDB */ = {
 			isa = PBXGroup;
 			children = (
-				F34BAFE11E71661A00DDF1C2 /* JQFMDB.h */,
-				F34BAFE21E71661A00DDF1C2 /* JQFMDB.m */,
+				CBF558652482846500BB696B /* JQFMDB.h */,
+				CBF558662482846500BB696B /* JQFMDB.m */,
 			);
 			path = JQFMDB;
 			sourceTree = "<group>";
@@ -217,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				F34BAFEA1E71683A00DDF1C2 /* libsqlite3.0.tbd */,
+				019EDD62FAF6524F03AB4632 /* libPods-JQFMDB.a */,
+				02C021362B8BD68039ACC004 /* libPods-JQFMDB-JQFMDBUITests.a */,
+				034955E378F99BF0F0A53F49 /* libPods-JQFMDBTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34BAFC61E71657C00DDF1C2 /* Build configuration list for PBXNativeTarget "JQFMDB" */;
 			buildPhases = (
+				81AF92F40D26F7B2C2ADB271 /* [CP] Check Pods Manifest.lock */,
 				F34BAF921E71657C00DDF1C2 /* Sources */,
 				F34BAF931E71657C00DDF1C2 /* Frameworks */,
 				F34BAF941E71657C00DDF1C2 /* Resources */,
@@ -245,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34BAFC91E71657C00DDF1C2 /* Build configuration list for PBXNativeTarget "JQFMDBTests" */;
 			buildPhases = (
+				7D2B2EAE5930953FEAB2BAB8 /* [CP] Check Pods Manifest.lock */,
 				F34BAFAE1E71657C00DDF1C2 /* Sources */,
 				F34BAFAF1E71657C00DDF1C2 /* Frameworks */,
 				F34BAFB01E71657C00DDF1C2 /* Resources */,
@@ -263,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F34BAFCC1E71657C00DDF1C2 /* Build configuration list for PBXNativeTarget "JQFMDBUITests" */;
 			buildPhases = (
+				16E71B27EF2D73A6E778C80A /* [CP] Check Pods Manifest.lock */,
 				F34BAFB91E71657C00DDF1C2 /* Sources */,
 				F34BAFBA1E71657C00DDF1C2 /* Frameworks */,
 				F34BAFBB1E71657C00DDF1C2 /* Resources */,
@@ -283,7 +287,7 @@
 		F34BAF8E1E71657C00DDF1C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Joker;
 				TargetAttributes = {
 					F34BAF951E71657C00DDF1C2 = {
@@ -304,7 +308,7 @@
 			};
 			buildConfigurationList = F34BAF911E71657C00DDF1C2 /* Build configuration list for PBXProject "JQFMDB" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -350,6 +354,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16E71B27EF2D73A6E778C80A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQFMDB-JQFMDBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2B2EAE5930953FEAB2BAB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQFMDBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81AF92F40D26F7B2C2ADB271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JQFMDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F34BAF921E71657C00DDF1C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -357,17 +430,12 @@
 			files = (
 				F34BAFF11E7243A000DDF1C2 /* ProductionView.m in Sources */,
 				F34BAFA11E71657C00DDF1C2 /* ViewController.m in Sources */,
-				F34BAFDE1E7165F500DDF1C2 /* FMDatabaseQueue.m in Sources */,
 				F34BAFE61E71669900DDF1C2 /* Person.m in Sources */,
 				F34BAF9E1E71657C00DDF1C2 /* AppDelegate.m in Sources */,
 				F34BAF9B1E71657C00DDF1C2 /* main.m in Sources */,
 				F34BAFEE1E72346000DDF1C2 /* DBCell.m in Sources */,
-				F34BAFDB1E7165F500DDF1C2 /* FMDatabase.m in Sources */,
-				F34BAFDD1E7165F500DDF1C2 /* FMDatabasePool.m in Sources */,
-				F34BAFDF1E7165F500DDF1C2 /* FMResultSet.m in Sources */,
-				F34BAFE31E71661A00DDF1C2 /* JQFMDB.m in Sources */,
 				F34BAFA71E71657C00DDF1C2 /* JQFMDB.xcdatamodeld in Sources */,
-				F34BAFDC1E7165F500DDF1C2 /* FMDatabaseAdditions.m in Sources */,
+				CBF558672482846500BB696B /* JQFMDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,20 +494,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -462,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -473,20 +550,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -512,6 +598,7 @@
 		};
 		F34BAFC71E71657C00DDF1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8307A9771A7D30BDD14279 /* Pods-JQFMDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JQFMDB/Info.plist;
@@ -523,6 +610,7 @@
 		};
 		F34BAFC81E71657C00DDF1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DB88CC215705194AB2D742 /* Pods-JQFMDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JQFMDB/Info.plist;
@@ -534,6 +622,7 @@
 		};
 		F34BAFCA1E71657C00DDF1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B5A21F07211F9708B67C01 /* Pods-JQFMDBTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JQFMDBTests/Info.plist;
@@ -546,6 +635,7 @@
 		};
 		F34BAFCB1E71657C00DDF1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBD25CE4FAE4DBC56827993 /* Pods-JQFMDBTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JQFMDBTests/Info.plist;
@@ -558,6 +648,7 @@
 		};
 		F34BAFCD1E71657C00DDF1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94428A935381213F3A23A3A2 /* Pods-JQFMDB-JQFMDBUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JQFMDBUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -569,6 +660,7 @@
 		};
 		F34BAFCE1E71657C00DDF1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E3D8B21A009AE69FDEFAFA /* Pods-JQFMDB-JQFMDBUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JQFMDBUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -597,6 +689,7 @@
 				F34BAFC81E71657C00DDF1C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34BAFC91E71657C00DDF1C2 /* Build configuration list for PBXNativeTarget "JQFMDBTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +698,7 @@
 				F34BAFCB1E71657C00DDF1C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F34BAFCC1E71657C00DDF1C2 /* Build configuration list for PBXNativeTarget "JQFMDBUITests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +707,7 @@
 				F34BAFCE1E71657C00DDF1C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

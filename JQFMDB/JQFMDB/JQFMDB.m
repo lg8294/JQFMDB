@@ -134,13 +134,18 @@ static JQFMDB *jqdb = nil;
     
     NSMutableString *fieldStr = [[NSMutableString alloc] initWithFormat:@"CREATE TABLE %@ (pkid  INTEGER PRIMARY KEY,", tableName];
     
+    NSMutableDictionary *mdic = [dic mutableCopy];
+    if (nameArr) {
+        [mdic removeObjectsForKeys:nameArr];
+    }
+    [mdic removeObjectForKey:@"pkid"];
+    
+    dic = [mdic copy];
+    
     int keyCount = 0;
     for (NSString *key in dic) {
         
         keyCount++;
-        if ((nameArr && [nameArr containsObject:key]) || [key isEqualToString:@"pkid"]) {
-            continue;
-        }
         if (keyCount == dic.count) {
             [fieldStr appendFormat:@" %@ %@)", key, dic[key]];
             break;
@@ -276,6 +281,7 @@ static JQFMDB *jqdb = nil;
         [mArr addObject:[resultSet stringForColumn:@"name"]];
     }
     
+    [resultSet close];
     return mArr;
 }
 
@@ -453,6 +459,7 @@ static JQFMDB *jqdb = nil;
         
     }
     
+    [set close];
     return resultMArr;
 }
 
@@ -506,11 +513,14 @@ static JQFMDB *jqdb = nil;
     {
         NSInteger count = [set intForColumn:@"count"];
         if (count == 0) {
+            [set close];
             return NO;
         } else {
+            [set close];
             return YES;
         }
     }
+    [set close];
     return NO;
 }
 
@@ -526,8 +536,10 @@ static JQFMDB *jqdb = nil;
     FMResultSet *set = [_db executeQuery:sqlstr];
     while ([set next])
     {
+        [set close];
         return [set intForColumn:@"count"];
     }
+    [set close];
     return 0;
 }
 
@@ -547,8 +559,10 @@ static JQFMDB *jqdb = nil;
     FMResultSet *set = [_db executeQuery:sqlstr];
     while ([set next])
     {
+        [set close];
         return [set longLongIntForColumn:@"pkid"];
     }
+    [set close];
     return 0;
 }
 
@@ -560,13 +574,14 @@ static JQFMDB *jqdb = nil;
 - (BOOL)jq_alterTable:(NSString *)tableName dicOrModel:(id)parameters excludeName:(NSArray *)nameArr
 {
     __block BOOL flag;
+    __weak typeof(self) weakSelf = self;
     [self jq_inTransaction:^(BOOL *rollback) {
         if ([parameters isKindOfClass:[NSDictionary class]]) {
             for (NSString *key in parameters) {
                 if ([nameArr containsObject:key]) {
                     continue;
                 }
-                flag = [_db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, parameters[key]]];
+                flag = [weakSelf.db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, parameters[key]]];
                 if (!flag) {
                     *rollback = YES;
                     return;
@@ -586,11 +601,11 @@ static JQFMDB *jqdb = nil;
             } else {
                 CLS = parameters;
             }
-            NSDictionary *modelDic = [self modelToDictionary:CLS excludePropertyName:nameArr];
-            NSArray *columnArr = [self getColumnArr:tableName db:_db];
+            NSDictionary *modelDic = [weakSelf modelToDictionary:CLS excludePropertyName:nameArr];
+            NSArray *columnArr = [weakSelf getColumnArr:tableName db:weakSelf.db];
             for (NSString *key in modelDic) {
                 if (![columnArr containsObject:key] && ![nameArr containsObject:key]) {
-                    flag = [_db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, modelDic[key]]];
+                    flag = [weakSelf.db executeUpdate:[NSString stringWithFormat:@"ALTER TABLE %@ ADD COLUMN %@ %@", tableName, key, modelDic[key]]];
                     if (!flag) {
                         *rollback = YES;
                         return;
