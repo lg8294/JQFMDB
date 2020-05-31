@@ -55,7 +55,6 @@
 		CBF558632482834E00BB696B /* JQFMDB.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JQFMDB.podspec; sourceTree = "<group>"; };
 		CBF558652482846500BB696B /* JQFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQFMDB.h; sourceTree = "<group>"; };
 		CBF558662482846500BB696B /* JQFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQFMDB.m; sourceTree = "<group>"; };
-		CBF55868248287F000BB696B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E6E3D8B21A009AE69FDEFAFA /* Pods-JQFMDB-JQFMDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB-JQFMDBUITests.release.xcconfig"; path = "Target Support Files/Pods-JQFMDB-JQFMDBUITests/Pods-JQFMDB-JQFMDBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E7DB88CC215705194AB2D742 /* Pods-JQFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQFMDB.release.xcconfig"; path = "Target Support Files/Pods-JQFMDB/Pods-JQFMDB.release.xcconfig"; sourceTree = "<group>"; };
 		F34BAF961E71657C00DDF1C2 /* JQFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JQFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +129,6 @@
 		F34BAF8D1E71657C00DDF1C2 = {
 			isa = PBXGroup;
 			children = (
-				CBF55868248287F000BB696B /* Podfile */,
 				CBF558632482834E00BB696B /* JQFMDB.podspec */,
 				F34BAF981E71657C00DDF1C2 /* JQFMDB */,
 				F34BAFB51E71657C00DDF1C2 /* JQFMDBTests */,

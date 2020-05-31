@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JQFMDB"
-  s.version      = "1.1.5"
+  s.version      = "1.1.6"
   s.summary      = "FMDB的封装,操作简单,线程安全,扩展性强,直接操作model或dictionary"
 
   # This description is used to generate tags and improve search results.
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
 
   #  When using multiple platforms
     s.ios.deployment_target = "7.0"
-    s.osx.deployment_target = "10.7"
+    s.osx.deployment_target = "10.10"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    s.dependency "FMDB"
+    s.dependency 'FMDB', '~> 2.7.5'
 
 end

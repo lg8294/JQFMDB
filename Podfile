@@ -8,7 +8,7 @@ target 'JQFMDB' do
   #use_frameworks!
 
   # Pods for JQFMDB
-  pod 'FMDB'
+  pod 'FMDB', '~> 2.7.5'
 
   target 'JQFMDBTests' do
     inherit! :search_paths
