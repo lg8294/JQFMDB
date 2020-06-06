@@ -536,8 +536,9 @@ static JQFMDB *jqdb = nil;
     FMResultSet *set = [_db executeQuery:sqlstr];
     while ([set next])
     {
+        int count = [set intForColumn:@"count"];
         [set close];
-        return [set intForColumn:@"count"];
+        return count;
     }
     [set close];
     return 0;
